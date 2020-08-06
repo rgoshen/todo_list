@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png" type="image/icon type" />
+    <title>To-Do List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <!-- App Title -->
+    <header class="text-centered">
+      <h1>To-Do List</h1>
+
+      <!-- End App Title -->
+
+      <!-- New Task Form -->
+      <form action="" id="todo" class="text-centered">
+        <label for="task">Task:</label>
+        <input
+          type="text"
+          id="task"
+          placeholder="Enter new task here"
+          title="Input new task here"
+        />
+        <button id="add">Add</button>
+      </form>
+      <!-- End New Task Form -->
+    </header>
+
+    <!-- Task List Section -->
+    <div id="listing" class="container">
+      <ol id="taskList"></ol>
+    </div>
+    <!-- End Task List Section -->
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script src="localStorage.js"></script>
+  </body>
+</html>
